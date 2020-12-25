@@ -5,6 +5,7 @@ from utils import smoothen
 import pandas as pd
 from sklearn import pipeline, preprocessing
 from datetime import datetime
+import sys
 
 from gym.envs.box2d import LunarLander
 
@@ -19,6 +20,7 @@ SUCCESS_CRITERIA = 220
 def main():
     env = LunarLander()
 
+    render_train = 'render' in sys.argv
     # Add transformers for tile coding or extra features.
     transformer = pipeline.FeatureUnion(
         [
@@ -64,7 +66,7 @@ def main():
     # agent = EpisodicSemiGradient(lr=a, init_epsilon=0.3, max_steps=800, gamma=0.9999, threshold=0.0,
     #                transformer=None, success_count=3, success_criteria=220)
 
-    agent.fit(env, render_train=False, verbose=True, episodes=10000)
+    agent.fit(env, render_train=render_train, verbose=True, episodes=10000)
 
     agent.land(env, verbose=False)
     now = datetime.now().strftime("%Y-%m-%d")
