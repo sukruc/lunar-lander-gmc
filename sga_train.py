@@ -22,7 +22,7 @@ def main():
     # Add transformers for tile coding or extra features.
     transformer = pipeline.FeatureUnion(
         [
-            # ('scaler', preprocessing.StandardScaler()),
+            ('scaler', preprocessing.StandardScaler()),
             # ('square', preprocessing.FunctionTransformer(lambda x: x**2, validate=False)),
             # ('dummy', DummyTransformer()),
             # ('poly', preprocessing.PolynomialFeatures(2)),
