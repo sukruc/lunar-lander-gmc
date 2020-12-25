@@ -1,5 +1,7 @@
 # Lunar Lander
 ---
+![Lunar Lander](img/landing.png)
+
 ## Usage
 ---
 Run `land.py` to land on Moon!
