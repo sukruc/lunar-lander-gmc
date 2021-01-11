@@ -36,3 +36,4 @@ and install the package using `pip install [wheel filename]`.
 [1]: url "Sutton, R. S., Barto, A. G.  (20181019). Reinforcement Learning: An Introduction."
 
 1. "Sutton, R. S., Barto, A. G.  (20181019). Reinforcement Learning: An Introduction."
+
