@@ -2,7 +2,7 @@
 ---
 ![Challenger 8](img/landing.png)
 
-Surprise your colleagues working on DQN by learning to land on moon in under 4 minutes using only 8 weights.
+Surprise your colleagues working on DQN by learning to land on moon in under 4 minutes using only 32 weights.
 
 ## Usage
 ---
